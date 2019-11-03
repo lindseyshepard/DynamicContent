@@ -3,41 +3,109 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body {
 
+<title>Lindsey Shepard</title>
+<style type="text/css">
+.splash {
+    color: white;
+    text-align: center;
+}
+
+
+body {
+top:0px;
   background-image: url('HikingWithPet.jpg');
-  background-repeat: no-repeat;
+  background-repeat: no-repeat 0px 0px;
+  background: width="100%";
   background-position: center;
   background-size:cover;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   body {
   line-height: 1;
-      background-image: url('HikingWithPet.jpg');
-  background-repeat: no-repeat;
+  background-image: url('HikingWithPet.jpg') id="image1" no-repeat 95% 50%;
+  min-height:100%;
   background-position: center;
-  background-size:cover;
 
   }
 }
 
 </style>
+<script>
+
+
+
+
+function focus() {
+focus_draw("image1");
+}
+
+function focus_draw(image1, focusRight, focusLeft, focusTop, FocusBottom) {
+
+var imageSourceRaw = document.getElement(image1);
+var pixWidth = Number.parseFloat(imageSourceRaw.width);
+var pixHeight = Number.parseFloat(imageSourceRaw.height);
+var pixAspectCenter = pixWidth / pixHeight;
+var pixLRcenter = pixWidth/2;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
 </head>
 
-<title>Lindsey Shepard</title>
 <body>
+<br><br><br>
+<div.splash>
+<center>
+<h1><font color="white"> This is my Practice page</font></h1></center>
+<p><font color="white">This is a test</font><p></div>
 
-<p>This is a test<p>
 
 
 
 
 
-
-<img class="hidden" src="" width="460" height="545">
+<img class="hidden" srcset="" width="460" height="545">
 
 
 </body>
+
+
+
 </html>
