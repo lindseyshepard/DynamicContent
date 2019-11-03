@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lindsey Shepard</title>
+<style type="text/css">
+.splash {
+    color: white;
+    text-align: center;
+}
+body {
+top:0px;
+  background-image: url('HikingWithPet.jpg');
+  background-repeat: no-repeat 0px 0px;
+  background: width="100%";
+  background-position: center;
+  background-size:cover;
+}
+@media only screen and (max-width: 400px) {
+  body {
+  line-height: 1;
+  background-image: url('HikingWithPet.jpg') id="image1" no-repeat 95% 50%;
+  min-height:100%;
+  background-position: center;
+  }
+}
+</style>
+
+--------------------------Below this Line is what I am working on!-------------------------------------------------
+
+
+
+<script>
+function focus() {
+focus_draw("image1");
+}
+
+function focus_draw(image1, focusRight, focusLeft, focusTop, FocusBottom) {
+
+
+var imageSourceRaw = document.getElement(image1); //This is the image as it is
+var pixWidth = Number.parseFloat(imageSourceRaw.width); //the width
+var pixHeight = Number.parseFloat(imageSourceRaw.height); //the height
+var pixAspectCenter = pixWidth / pixHeight; //what the center is
+var pixLRcenter = pixWidth/2; //what the center is for half-way points on the left or the right side 
+
+//focus zone
+var focusWidth = focusRight-focusLeft;
+var focusHeight= focusBottom-focusTop;
+var focuscenterHorizontal = focusLeft+focusWidth/2;
+var focusCenterV = focusTop + focusHeight / 2;      // distance in pixels
+var focusAspect = focusWidth / focusHeight;          // aspect ratio (%) of focus area
+var focusTopMargin = focusTop;                        // height in pixels of top portion of image that might not be on screen
+var focusBottomMargin = pixHeight - focusBottom;       // height in pixels of bottom portion of image that might not be on screen
+var focusLeftMargin = focusLeft;                      // width in pixels of left portion of image that might not be on screen
+var focusRightMargin = pixWidth - focusRight; 
+
+
+
