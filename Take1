@@ -1,0 +1,4 @@
+This is just practice using Notepad++ to write JavaScript in order to create a web page. Keeping in mind my goal at the
+end of this is to have an HD image for a background that can adapt to any device that is looking at the webpage. Right
+now I have a background image, and depending if the width and height of the media screen changes will the image fix 
+itself to the user. 
